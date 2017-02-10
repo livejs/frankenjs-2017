@@ -166,48 +166,48 @@ It consists of
 
 ### FadeCandy to LED
 
-* The FadeCandy expects an array of 3-byte triples for each LED, which represents an RGB color
-* For example to light up the first LED with red and the second LED to green, we have to send this array
-* And this goes on and on for every LED
+* And to create visualizations, it works like this:
+* If we want to turn on the first LED to red, we send an array of 3-byte values to the FadeCandy
+* In this case 255, 0, 0, which stands for red, green and blue
+* If we want to turn on the second LED to green, we send another 3-byte value to the strip
+* In this case 0, 255, 0
+* This goes on and on from LED to LED; from strip to strip
+* So it's just one big array of colors
 
-array(
-  /* 1 LED */ 255, 0, 0,
-  /* 2 LED */ 0, 255, 0
-)
+
+
 
 ## 3. DMX512
 
-* If you don't want to build your own lights, you can use DMX512
-* It's a standard for digital networks and it's commonly used for professional lightning, like you can see in this theatre: all the lights and lasers are controlled using DMX
+* The third thing that is part of NERD DISCO is DMX512
+* It's commonly used for professional stage lightning, like you can see in this theatre: all the lights and lasers are controlled using DMX
 
 * DMX stands for **Digitial Multiplex**
-* The 512 stands for 512 channels (each channel has 1 byte)
+* The 512 stands for 512 channels
 
 * A network of DMX devices is called a DMX Universe
-* Every universe consists of one sender and multiple devices
-* The devices are connected in series with each other
-* Each device can have multiple channels
+* A DMX universe consists of a sender device (that sends all the data) and multiple devices that receive the data
+* Each device has a unique address and a specific amount of channels
 
-* My DMX512 universe consists of a USB DMX Interface, 2 PAR lights and a bubble machine
-* I have a Node.js-app running on my computer, which can talk over USB to the DMX interface
+* My DMX512 universe consists of a USB DMX Interface, because I can't send DMX data directly from the browser (there is no API yet)
+* And I can send data over USB to this USB DMX Interface
+* I also have 2 PAR lights, which you can see on the left & on the right of this table
+* Each of these lights have 3 channels (one for red, one for green and one for blue)
+* And a bubble machine (which has two channels)
 
-* The DMX interface expects an array of 512 bytes
-* Each DMX device can have multiple channels and a configured address
-
-* The PAR lights have 3 channels each, which means the first one is at address 1, the second one at address 4, the bubble machine at 16.
-
-* If I want to turn the first PAR light to red, I send the following Object
+* And the data is expected like this:
+* We create an Object
 
 (*first PAR light*)
-
-* To change the color of the second light to green, we send the following data on address 4:
+* The first device has the address of 1 and we want to turn it on in red, so we send 255, 0, 0 -> which is red
 
 (*second PAR light*)
+* The second device has an address of 4 and we want to turn it green, so we send 0, 255, 0 to it
 
-* To turn on the motor of the bubble machine, we send 255 on channel 16
-* To turn on the fan of the bubble machine, we send 255 on channel 17
+(*bubble machine*)
+* The fog machine has an address of 16 and to turn it on, we have to send 255 for the motor on channel 16 and 255 for the fan on channel 17
 
-(*fog machine*)
+
 
 **TIM:** And now it's part 3: Sam & Tim
 
@@ -217,7 +217,7 @@ array(
 
 **SAM:** A couple of months ago, Tim and I met through Live:JS: A collective of audio and visual artists. I asked Tim: Oh, wouldn't it be nice to combine our projects?
 
-**TIM:** I said: YES, that is a good idea. Let's have a Hack Weekend. So Sam visited me in Frankfurt
+**TIM:** I said: YES, that is a good idea. Why don't we do this and meet each other for a Hack Weekend?
 
 **SAM:** We added MIDI controller assignments in modV and grabbed the Canvas data to send it over WebSockets to Tim's project nerdV, which controls the NERDDISCO LED Curtain and DMX lighting!
 
