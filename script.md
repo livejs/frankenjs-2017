@@ -5,6 +5,8 @@
 
 our story is split into 3 chapters and by the end you will know how to use the web to do an audio / visual live performance.
 
+And now it's part 1: Sam
+
 ---
 
 # Part 1: Sam
@@ -20,6 +22,7 @@ I use the Nintendo Game Boy to create music, which is commonly referred to as Ch
 I've played shows with my music all over Europe and it sounds a little like this:
 
 (*PLAY MUSIC*)
+(*next slide*)
 
 I've been doing this for about 8 years now, and just a couple of years ago I wanted to create visuals to go with my music and shows.
 
@@ -35,7 +38,9 @@ We start off with an **audio context**, and add from there.
 (**change**)
 
 For basic usage, a source is needed and a destination.  
-Sources can be either ```<audio>```, an oscillator or a stream.  
+Sources can be either ```<audio>```,
+(**change**)
+an oscillator or a stream.  
 
 (**change**)
 
@@ -46,6 +51,8 @@ In between the input and output we can add other nodes such as effects (reverb, 
 (*ANALYSER NODE INFORMATION*)
 
 You can do a lot with the Analyser node on its own but there comes a point where I needed a more refined value to work with.  
+
+(*next slide*)
 
 I use Meyda, an audio processing library.  
 
@@ -205,7 +212,7 @@ It consists of
 * The second device has an address of 4 and we want to turn it green, so we send 0, 255, 0 to it
 
 (*bubble machine*)
-* The fog machine has an address of 16 and to turn it on, we have to send 255 for the motor on channel 16 and 255 for the fan on channel 17
+* The bubble machine has an address of 16 and to turn it on, we have to send 255 for the motor on channel 16 and 255 for the fan on channel 17
 
 
 
