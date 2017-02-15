@@ -2,13 +2,6 @@
 
 This is the talk / show "[{Live:JS}](https://twitter.com/livejs_network)" (based on the [dotJS 2016 talk](https://github.com/livejs/dotjs2016)) for [FrankenJS 2017](https://twitter.com/frankenJS) by [Sam Wray](https://twitter.com/_2xaa) & [Tim Pietrusky](https://twitter.com/TimPietrusky).
 
-## Talk
-
-
-## After-party
-
-
-
 
 ## Slides
 
@@ -46,9 +39,7 @@ If you want to know even more about audio / visual art using everything the brow
 
 [Martin Schuhfuss](https://twitter.com/), [Ruth John](https://twitter.com/) & [Matt McKegg](https://twitter.com/) are part of {Live:JS} and they gave the first {Live:JS} talk at [JSConf Asia 2016](https://2016.jsconf.asia). You can [watch it on YouTube](https://www.youtube.com/watch?v=Ody93kpAjAY).
 
-#### dotJS 2016
-
-...
+#### 
 
 
 ## Setup
@@ -63,16 +54,18 @@ If you want to know even more about audio / visual art using everything the brow
 ### Tim
 
 * 1 x MacBook Pro (Retina, 13 inch, 2015) with HDMI out (plug type C)
-* [Novation Launch Control](https://global.novationmusic.com/launch/launch-control)
+* 1 x [Novation Launch Control](https://global.novationmusic.com/launch/launch-control)
+* 1 x [Novation Launch Control XL](https://global.novationmusic.com/launch/launch-control-xl)
+* 1 x [AKAI MIDImix](http://www.akaipro.com/index.php/product/midimix)
 
 #### LED curtain
 
-* [Adafruit FadeCandy](https://www.adafruit.com/product/1689)
+* 1 x [Adafruit FadeCandy](https://www.adafruit.com/product/1689)
 * 8 x 1m [Adafruit NeoPixel strips](https://www.adafruit.com/products/1138)
-* 2 x power supply for the LEDs (plug type C)
-* 1 x Raspberry PI 3 with 1 power plug (plug type C)
+* 2 x 10A / 5V power supply for the LEDs (plug type C)
+* 1 x [Raspberry PI 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) with 1 power plug (plug type C)
 * 1 x [TP-Link 300Mbps Wireless N Router](http://www.tp-link.com/en/products/details/cat-9_TL-WR841ND.html)
-* Tripod
+* 1 x [ADJ LTS-6 tripod](http://www.adj.com/lts-6)
 
 #### DMX
 

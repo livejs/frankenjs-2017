@@ -26,8 +26,6 @@ I've played shows with my music all over Europe and it sounds a little like this
 
 I've been doing this for about 8 years now, and just a couple of years ago I wanted to create visuals to go with my music and shows.
 
-(*next slide*)
-
 As there is no direct MIDI output from the software I use on Game Boy, I researched how to analyse audio using JavaScript in the browser.
 
 ## WebAudio analysing
@@ -46,7 +44,7 @@ an oscillator or a stream.
 
 The destination is usually your speakers, but can be any audio output your system supports.
 
-In between the input and output we can add other nodes such as effects (reverb, biquad filter, panner, compressor), gain nodes and, what I needed for visualisation, analyser nodes.
+In between the input and output we can add other nodes such as effects, gain nodes and, what I needed for visualisation, analyser nodes.
 
 (*ANALYSER NODE INFORMATION*)
 
@@ -56,7 +54,7 @@ You can do a lot with the Analyser node on its own but there comes a point where
 
 I use Meyda, an audio processing library.  
 
-Meyda can return far more advanced audio analysis (*LIST OF MEYDA'S FEATURES*) and the two which are most useful to me are:
+Meyda can return far more advanced audio analysis and the two which are most useful to me are:
 
 * (**change**) ZCR, the Zero Cross Rate
 * (**change**) RMS, Root Mean Squared
@@ -69,6 +67,8 @@ Now that I had a WebAudio figured out, I could combine the values from Meyda wit
 
 (*change*)
 
+This was the first test I ever did with Meyda...
+
 I made a modular framework for mixing different visual outputs, called...
 
 ## modV
@@ -77,7 +77,7 @@ modV stands for Modular Visualisation. It is an Open Source audio visualisation 
 
 (**change**)
 
-The program's development started 2 years ago and it is the result of my adventure into audio visualisation using JavaScript.
+The program's development started over 2 years ago and it is the result of my adventure into audio visualisation using JavaScript.
 
 Before I show it to you, I'm going to go over the technologies used within modV to create the visualisations.
 
@@ -222,7 +222,7 @@ It consists of
 
 # Part 3: Sam + Tim
 
-**SAM:** A couple of months ago, Tim and I met through Live:JS: A collective of audio and visual artists. I asked Tim: Oh, wouldn't it be nice to combine our projects?
+**SAM:** Last year, Tim and I met through Live:JS: A collective of audio and visual artists. I asked Tim: Oh, wouldn't it be nice to combine our projects?2
 
 **TIM:** I said: YES, that is a good idea. Why don't we do this and meet each other for a Hack Weekend?
 
